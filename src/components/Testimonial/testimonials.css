@@ -1,0 +1,110 @@
+.testimonials-section {
+    background: linear-gradient(135deg, #040916 0%, #0a1428 100%);
+    color: #fff;
+    padding: 60px 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.subheading {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+    font-family: "Times New Roman", serif;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px -1px rgba(0, 0, 0, 0.2);
+}
+
+.stars {
+    margin-bottom: 16px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.star {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.star.filled {
+    color: #fff;
+}
+
+.quote {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 4px 0;
+}
+
+.position {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .heading {
+        font-size: 36px;
+    }
+
+    .subheading {
+        font-size: 30px;
+    }
+}
+
